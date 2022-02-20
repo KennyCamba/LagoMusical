@@ -15,6 +15,9 @@ class LinkedList:
         return self.__size__
 
     def add(self, data):
+        """
+        Agrega un elemento al final de la lista.
+        """
         node = Node(data)
         self.nodes[data] = node
         if self.first == None:
@@ -27,6 +30,9 @@ class LinkedList:
         
     
     def next(self, data):
+        """	
+        Devuelve el elemento siguiente de un elemento dado (data).
+        """
         node = self.nodes.get(data)
         if node == None:
             return -1
@@ -38,4 +44,7 @@ class LinkedList:
     
     
     def contains(self, data):
+        """
+        Devuelve True si el elemento dado (data) está en la lista.
+        """
         return self.nodes.get(data) != None

@@ -1,6 +1,7 @@
 import unittest
 
-from src.main import reproducir
+from song_maker import reproducir
+
 
 class TestLagoMusical(unittest.TestCase):
     
